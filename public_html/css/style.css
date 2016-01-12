@@ -1,0 +1,374 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+html{height: 100%}
+
+header,footer{
+    width: 98%;
+    padding: 1%;
+    background-color: #ffffff;
+    min-height: 30px;
+    float: left;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    color: #333;
+    background-color: #f7f7f7;
+    font-size: 1em;
+    font-family: "Segoe UI", sans-serif;
+    line-height: 135%;
+}
+
+hr {
+    display: block;
+    border: 0;
+    height: 1px;
+    border-top: 1px solid #ccc;
+    padding: 0;
+}
+
+a{
+    color: #f48b8b;
+    text-decoration: none; /*сссылки без подчеркивания*/
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;;
+    -webkit-transition: all.6s ease;;
+    -ms-transition: all.6s ease;
+}
+
+a:hover{
+    color: #4bc8f4;
+    text-decoration: none; /*сссылки без подчеркивания*/
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;;
+    -webkit-transition: all.6s ease;;
+    -ms-transition: all.6s ease;
+}
+
+a:active{color: #3036ff}
+
+#menuHref a {
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: #626262;
+}
+
+#menuHref a:hover {
+    background-color: #ececec;
+
+}
+/* Selection block*/
+::selection{
+    background: #f48b8b;
+    color: #fff;
+}
+::-moz-selection{
+    background: #f48b8b;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+/* Стили шапки*/
+header{
+    border-bottom: 2px silver solid; /*нижняя линия */
+}
+#logo{
+    font-size: 1.3em;
+    font-family: "Comic Sanc MC", sans-serif;
+}
+
+.contact{
+    font-size: 1.3em;
+    font-family: "Comic Sanc MC", sans-serif;
+    margin-left: 20px;
+}
+
+.right{float: right;}
+.left{float: left;}
+.clear{clear: both;}
+
+input[type=text].field {
+    border-radius: 5px;
+    border: 2px silver solid;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+input[type=text].field:focus{
+    border: 2px #f48b8b solid;
+}
+
+#menu{
+    color: #666;
+    font-family: "Comic Sanc MC", sans-serif;
+    font-size: 1.7em;
+    position: relative;
+}
+
+#menu hr {
+    width: 500px;
+    max-width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#wrapper{
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#wrapper .articles {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+#wrapper .articles article{
+    float: left;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+    min-height: 400px;
+    padding: 5px;
+}
+
+@media (min-width: 700px)  {
+    #wrapper .articles article{
+        width: 31.3%;
+        margin-right: 2%;
+    }
+}
+
+@media (max-width: 699px)  {
+    #wrapper .articles article{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+#wrapper .articles article img{
+    max-width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+#wrapper .articles article h2{
+    width: 90%;
+    margin-left: 5%;
+    font-weight: normal; /*жирность шрифта */
+    font-size: 1.7em;
+    color: #4a4a4a;
+}
+
+#wrapper .articles article p{
+    width: 80%;
+    margin-left: 10%;
+    text-indent: 1em;
+}
+
+#wrapper .articles article a{
+    background-color: #3036ff;
+    margin-left: 5%;
+    border-radius: 5px;
+    padding: 5px;
+    color: #ffffff;
+    float: left;
+    margin-top: 10px;
+}
+
+#wrapper .articles article a:hover{background-color: #39f486;}
+
+#wrapper .articles {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#wrapper .articles_min {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+#wrapper .articles_min article{
+    float: left;
+
+    border: 1px solid silver;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+    min-height: 400px;
+    padding: 5px;
+}
+
+@media (min-width: 700px)  {
+    #wrapper .articles_min article{
+        width: 14.65%;
+        margin-right: 2%;
+    }
+}
+
+@media (max-width: 699px)  {
+    #wrapper .articles_min article{
+        width: 31.33%;
+        margin-top: 10px;
+        margin-right: 2%;
+    }
+}
+
+#wrapper .articles_min article img{
+    max-width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+#wrapper .articles_min article h2{
+    width: 90%;
+    margin-left: 5%;
+    font-weight: normal; /*жирность шрифта */
+    font-size: 1.7em;
+    color: #4a4a4a;
+}
+
+#wrapper .articles_min article p{
+    width: 80%;
+    margin-left: 10%;
+    text-indent: 1em;
+}
+
+#wrapper .articles_min article a{
+    background-color: #3036ff;
+    margin-left: 5%;
+    border-radius: 5px;
+    padding: 5px;
+    color: #ffffff;
+    float: left;
+    margin-top: 10px;
+}
+
+#wrapper .articles_min article a:hover{background-color: #39f486;}
+
+    /* Центарльный блок */
+#man_soc_block{
+    width: 100%;
+    padding: 2% 0;
+    border-bottom: 2px solid silver;
+    border-top: 2px solid silver;
+    margin: 20px 0;
+    float: left;
+    background: url('../img/thumbs_fon2.jpg') repeat-x;
+}
+
+#man_soc_block_in{
+    text-align: center;
+    padding: 1%;
+    height: 20px;
+    background-color: #fafafa;
+    border: 1px solid silver;
+    border-radius: 5px;
+    width: 500px;
+    margin: auto;
+}
+
+    /*Стили подвала*/
+footer{
+    border-bottom: 2px silver solid; /*верхняя линия */
+    margin-top: 10px;
+    height: auto;
+   /* margin-right: 0!important;
+    margin-left: 0!important;*/
+    padding-bottom: 0;
+}
+
+/*footer a{clear: none!important;}*/
+footer img{width: 20px;height: 20px; float:left;margin-left: 5px}
+
+#page-wrap:after{content: ""; display: block;}
+
+footer,#page-wrap:after {height: 10px;}
+
+#page-wrap{
+    min-height: 94%;
+    margin-bottom: -10px;
+}
+
+/*страница О нас */
+#wrapper #articles_about{
+width: 80%;
+margin-left: 10%;
+}
+
+/* --- страница О нас */
+
+#wrapper #articles_about article{
+    float: left;
+    width: 100.65%;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+    margin-right: 2%;
+    min-height: 400px;
+    padding: 5px;
+}
+
+/* Стили для форм */
+form {
+    width: 60%;
+    margin-left: 20%;
+}
+
+form label{
+    float: left;
+    width: 100%;
+}
+form input,textarea {
+    border-radius: 5px;
+    border: 2px silver solid;
+    padding: 5px;
+    margin-bottom: 10px;
+    float: left;
+    clear: both;
+    width: 40%;
+}
+
+form input:focus,textarea:focus{
+    border: 2px #f48b8b solid;
+}
+
+form textarea {
+    width: 60%;
+    height: 300px;
+    max-height: 100%;
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+form #send{
+    cursor: pointer;
+}
+
+form #send:hover{
+    background-color: #f48b8b;
+}
+
+
+/* -- Стили для форм */
