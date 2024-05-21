@@ -1,163 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
 <head>
-    <meta http-equiv="content-type" content="text/html" charset="utf-8">
-    <meta name="keywords" content="test, site, web-site">
-    <meta name="description" content="Это тестовый сайт">
+    <title>CV Oleg</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Resume/CV Template for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <!--link rel="shortcut icon" href="favicon.ico"-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+</head> 
 
-    <link href="public_html/css/style.css" rel="stylesheet" type="text/css">
-    <link href="public_html/img/titleIcon.ico" rel="shortcut icon" type="image/x-icon">
-
-    <title>Тестовый сайт</title>
-</head>
 <body>
-<div id="page-wrap">
-    <header>
-        <a href="index.html" title="На главную" id="logo">Тестовый сайт</a>
-        <span class="contact"><a href="about.html">О нас</a></span>
-        <span class="contact"><input type="text" placeholder="Давайте помогу найти" class="field"></span>
-        <span class="contact right"><a href="into.html" title="Войти">Вход</a></span>
-        <span class="contact right"><a href="auth.html" title="Зарегистрироватся">Регистрация</a></span>
-    </header>
+    <div class="wrapper">       
+        <div class="sidebar-wrapper">
+            <div class="profile-container">
+                <img class="profile" src="assets/images/profile.png" alt="" />
+                <h1 class="name">Oleg</h1>
+                <h3 class="tagline">Team Lead/Full Stack Developer</h3>
+            </div><!--//profile-container-->
+            
+            <div class="contact-container container-block">
+                <ul class="list-unstyled contact-list">
+                    <!li class="email"><i class="fa fa-envelope"></i><a href="mailto: yourname@email.com">oleg</a></li>
+                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/" target="_blank">Oleg</a></li>
+                    <!--li class="github"><i class="fa fa-github"></i><a href="#" target="_blank"></a></li-->
+                </ul>
+            </div><!--//contact-container-->
+            <div class="education-container container-block">
+                <h2 class="container-block-title">Education</h2>
+                <div class="item">
+                    <h4 class="degree">Taras Shevchenko National University, Cybernetics</h4>
+                    <h5 class="meta">University of Kyiv</h5>
+                    <div class="time">1997 - 2002</div>
+                </div>
+            </div><!--//education-container-->
+            
+            <div class="languages-container container-block">
+                <h2 class="container-block-title">Languages</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>Ukrainian <span class="lang-desc">(Native)</span></li>
+                    <li>Russian <span class="lang-desc">(Native)</span></li>
+                    <li>English <span class="lang-desc">(Pre Intermediate)</span></li>
+                </ul>
+            </div><!--//interests-->
+            
+            <div class="interests-container container-block">
+                <h2 class="container-block-title">Interests</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>Pinpong</li>
+                    <li>Diving</li>
+                </ul>
+            </div><!--//interests-->
+            
+        </div><!--//sidebar-wrapper-->  
+        <div class="main-wrapper">
+            
+            <!--section class="section summary-section">
+                <h2 class="section-title"><i class="fa fa-user"></i></h2>
+                <div class="summary">
+                    <p></p>
+                </div>
+            </section-->
+            
+            <section class="skills-section section">
+                <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
+                <div class="skillset">        
+                    <div class="item">
+                        <h3 class="level-title">Angular 14</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="98%">
+                            </div>                                      
+                        </div>
+                    </div>
 
-    <div class="clear"><br/></div>
-    <center>
-        <div id="menu">Разделы <hr/></div>
-        <div id="menuHref">
-            <a href="about.html">О нас</a>
-            <a href="feedback.html">Обратная связь</a>
-            <a href="auth.html">Вход</a>
-            <a href="reg.html">Регистрация</a>
+                    <div class="item">
+                        <h3 class="level-title">Php (Yii2)</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="80%">
+                            </div>                                      
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <h3 class="level-title">HTML5 &amp; CSS</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="80%">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <h3 class="level-title">Postgresql</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="60%">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <h3 class="level-title">MS Sql</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="60%">
+                            </div>                                      
+                        </div>
+                    </div>                    
+                    
+                    <div class="item">
+                        <h3 class="level-title">NodeJs (NestJs)</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="30%">
+                            </div>                                      
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <h3 class="level-title">Java</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="20%">
+                            </div>                                      
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <h3 class="level-title">Android</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="20%">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="item">
+                        <h3 class="level-title">Ionic</h3>
+                        <div class="level-bar">
+                            <div class="level-bar-inner" data-level="20%">
+                            </div>                                      
+                        </div>
+                    </div>
+                    
+                </div>  
+            </section><!--//skills-section-->
+
+            <section class="section experiences-section">
+                <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Team Lead / Full Stack Developer</h3>
+                            <div class="time">2017 - Present</div>
+                        </div>
+                        <div class="company">Rozetka</div>
+                    </div>
+                    <div class="details">
+                        <p>Development of an e-commerce application, marketplace</p>
+                        <p>Use Angular 11, Php, NodeJs, Postgresql</p>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">Lead Developer</h3>
+                            <div class="time">2008 - 2017</div>
+                        </div>
+                        <div class="company">Mhp S.A.</div>
+                    </div>
+                    <div class="details">
+                        <p>Accounting system development</p>
+                        <p>Use 1C, MSSql, Android</p>
+                    </div>
+                </div>
+            
+            <!--section class="section projects-section">
+                <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+                <div class="intro">
+                    <p></p>
+                </div>
+                <div class="item">
+                    <span class="project-title"><a href="#" target="_blank"></a></span> 
+                    <span class="project-tagline"></span>
+                </div>
+            </section-->
+
+            <section class="section extra-education-section">
+                <h2 class="section-title"><i class="fa fa-briefcase"></i>Extra Education</h2>
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">
+                                <a href="https://www.udemy.com/certificate/UC-7e57e92e-a477-455a-8316-c8678fd5c8dc/">
+                                    NestJS Zero to Hero - Modern TypeScript Back-end Development</a></h3>
+                            <div class="time">2020</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">
+                                <a href="https://www.udemy.com/certificate/UC-J4KO7LDM">
+                                    Ionic 2/ Ionic 3 - Build iOS & Android Apps with Angular</a></h3>
+                            <div class="time">2018</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="meta">
+                        <div class="upper-row">
+                            <h3 class="job-title">
+                                <a href="http://ude.my/UC-DU47PQIC">
+                                    Node.js Developer Course</a></h3>
+                            <div class="time">2017</div>
+                        </div>
+                    </div>
+                </div>
+            
+            <!--section class="section projects-section">
+                <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+                <div class="intro">
+                    <p></p>
+                </div>
+                <div class="item">
+                    <span class="project-title"><a href="#" target="_blank"></a></span> 
+                    <span class="project-tagline"></span>
+                </div>
+            </section-->            
         </div>
-
-    </center>
-
-    <div id="wrapper">
-        <div class="articles">
-            <article>
-                <img src="public_html/img/Duckling.png" alt="Утка" title="Утка">
-                <h2>Заголовок</h2>
-                <p>Прикольная утка. Товары для детей</p>
-                <a href="/article">Далее ...</a>
-            </article>
-            <article>
-                <img src="public_html/img/female.jpg" alt="Девушка" title="Девушка">
-                <h2>Заголовок</h2>
-                <p>Класная девушка. Товары для прекрасных дам</p>
-                <a href="/article">Далее ...</a>
-            </article>
-            <article>
-                <img src="public_html/img/male.jpg" alt="Парень" title="Парень">
-                <h2>Заголовок</h2>
-                <p>Просто Мачо. Для настоящий мущин</p>
-                <a href="/article">Далее ...</a>
-            </article>
-
-        </div>
-        <!--
-        <div class="clear"></div>
-        <div id="man_soc_block">
-            <div id="man_soc_block_in">
-                <p>Самый крутой сайт</p>
-                <p>При регистрации скидка 5%</p>
-            </div>
-        </div>
-        -->
-        <div class="clear"><br/></div>
-        <center>
-            <div class="articles_min">
-                <article>
-                    <img src="public_html/img/Duckling.png" alt="Утка" title="Утка">
-                    <h2>Заголовок</h2>
-                    <p>Прикольная утка. Товары для детей</p>
-                    <a href="/article">Далее ...</a>
-                </article>
-                <article>
-                    <img src="public_html/img/female.jpg" alt="Девушка" title="Девушка">
-                    <h2>Заголовок</h2>
-                    <p>Класная девушка. Товары для прекрасных дам</p>
-                    <a href="/article">Далее ...</a>
-                </article>
-                <article>
-                    <img src="public_html/img/male.jpg" alt="Парень" title="Парень">
-                    <h2>Заголовок</h2>
-                    <p>Просто Мачо. Для настоящий мущин</p>
-                    <a href="/article">Далее ...</a>
-                </article>
-                <article>
-                    <img src="public_html/img/Duckling.png" alt="Утка" title="Утка">
-                    <h2>Заголовок</h2>
-                    <p>Прикольная утка. Товары для детей</p>
-                    <a href="/article">Далее ...</a>
-                </article>
-                <article>
-                    <img src="public_html/img/female.jpg" alt="Девушка" title="Девушка">
-                    <h2>Заголовок</h2>
-                    <p>Класная девушка. Товары для прекрасных дам</p>
-                    <a href="/article">Далее ...</a>
-                </article>
-                <article>
-                    <img src="public_html/img/male.jpg" alt="Парень" title="Парень">
-                    <h2>Заголовок</h2>
-                    <p>Просто Мачо. Для настоящий мущин</p>
-                    <a href="/article">Далее ...</a>
-                </article>
-
-            </div>
-        <div class="clear"><br/></div>
-        <div class="articles_min">
-            <article>
-                <img src="public_html/img/Duckling.png" alt="Утка" title="Утка">
-                <h2>Заголовок</h2>
-                <p>Прикольная утка. Товары для детей</p>
-                <a href="/article">Далее ...</a>
-            </article>
-            <article>
-                <img src="public_html/img/female.jpg" alt="Девушка" title="Девушка">
-                <h2>Заголовок</h2>
-                <p>Класная девушка. Товары для прекрасных дам</p>
-                <a href="/article">Далее ...</a>
-            </article>
-            <article>
-                <img src="public_html/img/male.jpg" alt="Парень" title="Парень">
-                <h2>Заголовок</h2>
-                <p>Просто Мачо. Для настоящий мущин</p>
-                <a href="/article">Далее ...</a>
-            </article>
-            <article>
-                <img src="public_html/img/Duckling.png" alt="Утка" title="Утка">
-                <h2>Заголовок</h2>
-                <p>Прикольная утка. Товары для детей</p>
-                <a href="/article">Далее ...</a>
-            </article>
-            <article>
-                <img src="public_html/img/female.jpg" alt="Девушка" title="Девушка">
-                <h2>Заголовок</h2>
-                <p>Класная девушка. Товары для прекрасных дам</p>
-                <a href="/article">Далее ...</a>
-            </article>
-            <article>
-                <img src="public_html/img/male.jpg" alt="Парень" title="Парень">
-                <h2>Заголовок</h2>
-                <p>Просто Мачо. Для настоящий мущин</p>
-                <a href="/article">Далее ...</a>
-            </article>
-
-        </div>
-        </center>
+      
     </div>
-</div>
+ 
+    <footer class="footer">
+        <div class="text-center">
+                <small></small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <!-- custom js -->
+    
+    <!--script async src="https://telegram.org/js/telegram-widget.js?19" data-telegram-login="currentBinanceBot" data-size="large" data-onauth="onTelegramAuth(user)" data-request-access="write"></script>
+	<script type="text/javascript">
+	  function onTelegramAuth(user) {
+		alert('Logged in as ' + user.first_name + ' ' + user.last_name + ' (' + user.id + (user.username ? ', @' + user.username : '') + ')');
+	  }
+	</script-->
 
-
-<footer>
-    <span class="left">Все права защищены &copy; 2015</span>
-
-<span class="right">
-  <a href="https://www.facebook.com/" target="_blank"><img src="public_html/img/fb.ico" alt="facebook" title="facebook" hspace="0"></a>
-  <a href="https://plus.google.com/" target="_blank"><img src="public_html/img/gplus.ico" alt="google plus" title="google plus"></a>
-  <a href="https://www.linkedin.com" target="_blank"><img src="public_html/img/in.ico" alt="linkedin" title="linkedin"></a>
-</span>
-</footer>
 
 </body>
-</html>
+</html> 
+
